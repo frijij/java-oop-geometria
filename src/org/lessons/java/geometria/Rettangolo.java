@@ -9,10 +9,24 @@ rispettivamente, l’area e il perimetro del rettangolo.
 public class Rettangolo {
 
     //1. campi: interi base e altezza
-
+int base;
+int altezza;
 
     //2. costruttori
-
+    Rettangolo (int base, int altezza){
+        this.base=base;
+        this.altezza=altezza;
+    }
 
     //3. metodi
+    int calcoloArea(){
+int areaRettangolo = base * altezza;
+return areaRettangolo;
+    }
+
+    int calcoloPerimetro (){
+        int perimetroRettangolo = (base + altezza) * 2;
+        return perimetroRettangolo;
+    }
+
 }
