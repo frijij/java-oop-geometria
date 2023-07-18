@@ -18,14 +18,13 @@ public class Main {
         System.out.print("Inserisci il valore dell'altezza: ");
         int altezzaInput = Integer.parseInt(scan.nextLine());
 
-        System.out.println("La base è " + baseInput + " e l'altezza è " + altezzaInput);
+        // inserisco misure di base e altezza del rettangolo
+        Rettangolo rettangolo = new Rettangolo(baseInput, altezzaInput);
 
-
-
-
+        // Stampo a video perimetro ed area
+        System.out.println("Il perimetro del rettangolo è " + rettangolo.calcoloPerimetro());
+        System.out.println("L'area del rettangolo è " + rettangolo.calcoloArea());
 
         scan.close();
-
-
     }
 }
