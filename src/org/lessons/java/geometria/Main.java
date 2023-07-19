@@ -22,8 +22,12 @@ public class Main {
         Rettangolo rettangolo = new Rettangolo(baseInput, altezzaInput);
 
         // Stampo a video perimetro ed area
-        System.out.println("Il perimetro del rettangolo è " + rettangolo.calcoloPerimetro());
-        System.out.println("L'area del rettangolo è " + rettangolo.calcoloArea());
+        System.out.println("Perimetro: " + rettangolo.calcoloPerimetro());
+        System.out.println("Area: " + rettangolo.calcoloArea());
+
+        // stampo il rettangolo con il metodo disegna
+        char marker;
+        rettangolo.disegna(marker='o');
 
         scan.close();
     }
